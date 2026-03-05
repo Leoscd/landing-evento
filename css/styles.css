@@ -39,6 +39,32 @@ a {
   text-decoration: none;
 }
 
+/* === UTILIDADES === */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.seccion-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 16px;
+}
+
+.seccion-titulo {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3.5vw, 46px);
+  font-weight: 700;
+  line-height: 1.12;
+  letter-spacing: -1px;
+  color: var(--text);
+  margin-bottom: 64px;
+}
+
 /* === BOTONES === */
 .btn {
   display: inline-flex;
@@ -209,7 +235,6 @@ a {
   position: absolute;
 }
 
-/* Grilla de fondo tipo plano arquitectonico */
 .geo--grid {
   inset: 0;
   background-image:
@@ -218,7 +243,6 @@ a {
   background-size: 60px 60px;
 }
 
-/* Lineas diagonales */
 .geo--line {
   height: 1px;
   background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.15), transparent);
@@ -246,7 +270,6 @@ a {
   transform: rotate(-28deg);
 }
 
-/* Circulo tipo curva de nivel */
 .geo--circle {
   width: 480px;
   height: 480px;
@@ -257,7 +280,6 @@ a {
   transform: translateY(-50%);
 }
 
-/* Rectangulos tipo ventanas / modulos */
 .geo--rect {
   border: 1px solid rgba(255, 215, 0, 0.08);
 }
@@ -277,7 +299,6 @@ a {
   border-color: rgba(255, 215, 0, 0.12);
 }
 
-/* Cruces tipo ejes de proyecto */
 .geo--cross {
   width: 20px;
   height: 20px;
@@ -331,3 +352,179 @@ a {
 .delay-3 { animation-delay: 0.4s; }
 .delay-4 { animation-delay: 0.55s; }
 .delay-5 { animation-delay: 0.7s; }
+
+/* === CONTEXTO === */
+.contexto {
+  background-color: var(--bg-secondary);
+  padding: 100px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Stats */
+.contexto__stats {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 80px;
+}
+
+.stat-item {
+  flex: 1;
+  padding: 0 40px;
+}
+
+.stat-item:first-child {
+  padding-left: 0;
+}
+
+.stat-item:last-child {
+  padding-right: 0;
+}
+
+.stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 7vw, 88px);
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 16px;
+  letter-spacing: -3px;
+}
+
+.stat-unit {
+  font-size: 0.5em;
+  letter-spacing: -1px;
+}
+
+.stat-desc {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+.stat-source {
+  display: block;
+  margin-top: 10px;
+  font-size: 11px;
+  color: #555555;
+  letter-spacing: 0.3px;
+}
+
+.stat-divider {
+  width: 1px;
+  height: 120px;
+  background: var(--border);
+  align-self: center;
+  flex-shrink: 0;
+}
+
+/* Comparativa */
+.contexto__comparativa {
+  display: grid;
+  grid-template-columns: 1fr 60px 1fr;
+  gap: 0;
+  margin-bottom: 64px;
+  border: 1px solid var(--border);
+}
+
+.comp-col {
+  padding: 40px;
+}
+
+.comp-col--ellos {
+  border-right: 1px solid var(--border);
+}
+
+.comp-header {
+  margin-bottom: 28px;
+}
+
+.comp-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 2px;
+}
+
+.comp-tag--activo {
+  background-color: rgba(255, 215, 0, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(255, 215, 0, 0.2);
+}
+
+.comp-tag--espera {
+  background-color: rgba(255, 255, 255, 0.04);
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+}
+
+.comp-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.comp-lista li {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text);
+  padding-left: 20px;
+  position: relative;
+}
+
+.comp-lista li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 1px;
+  background-color: var(--accent);
+}
+
+.comp-lista--muted li {
+  color: var(--text-muted);
+}
+
+.comp-lista--muted li::before {
+  background-color: #333333;
+}
+
+.comp-separador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg);
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+}
+
+.comp-vs {
+  font-family: var(--font-display);
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 2px;
+  writing-mode: vertical-rl;
+}
+
+/* Cierre */
+.contexto__cierre {
+  border-left: 3px solid var(--accent);
+  padding: 4px 0 4px 24px;
+}
+
+.contexto__cierre p {
+  font-family: var(--font-display);
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1.4;
+  font-style: italic;
+}
