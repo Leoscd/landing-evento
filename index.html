@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IA Arquitectura - Agentes Autonomos | SoyLeo AI</title>
+  <meta name="description" content="Aprende a implementar agentes de IA en tu estudio de arquitectura. Curso online, 17 de marzo 2026.">
+  <meta property="og:title" content="IA Arquitectura - Agentes Autonomos">
+  <meta property="og:description" content="El curso para arquitectos que quieren automatizar su flujo de trabajo con IA.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -15,7 +18,10 @@
   <nav class="nav">
     <div class="nav__inner">
       <span class="nav__logo">SoyLeo AI</span>
-      <a href="#inscripcion" class="btn btn--outline btn--sm">Inscribirme</a>
+      <button class="nav__hamburger" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="#inscripcion" class="btn btn--outline btn--sm nav__cta">Inscribirme</a>
     </div>
   </nav>
 
@@ -68,9 +74,7 @@
       <div class="seccion-label">El momento del cambio</div>
       <h2 class="seccion-titulo">El momento del cambio ya empezo</h2>
 
-      <!-- Stats -->
       <div class="contexto__stats">
-
         <div class="stat-item">
           <div class="stat-num">75<span class="stat-unit">%</span></div>
           <p class="stat-desc">
@@ -78,9 +82,7 @@
             <span class="stat-source">— McKinsey Global Institute, 2024</span>
           </p>
         </div>
-
         <div class="stat-divider" aria-hidden="true"></div>
-
         <div class="stat-item">
           <div class="stat-num">40<span class="stat-unit">%</span></div>
           <p class="stat-desc">
@@ -88,9 +90,7 @@
             <span class="stat-source">— AIA Technology in Architectural Practice, 2024</span>
           </p>
         </div>
-
         <div class="stat-divider" aria-hidden="true"></div>
-
         <div class="stat-item">
           <div class="stat-num">3<span class="stat-unit">x</span></div>
           <p class="stat-desc">
@@ -98,10 +98,8 @@
             <span class="stat-source">— Dodge Construction Network, 2023</span>
           </p>
         </div>
-
       </div>
 
-      <!-- Comparativa -->
       <div class="contexto__comparativa">
         <div class="comp-col comp-col--ellos">
           <div class="comp-header">
@@ -114,11 +112,9 @@
             <li>Capacidad de tomar mas proyectos sin escalar el equipo</li>
           </ul>
         </div>
-
         <div class="comp-separador" aria-hidden="true">
           <div class="comp-vs">vs</div>
         </div>
-
         <div class="comp-col comp-col--vos">
           <div class="comp-header">
             <span class="comp-tag comp-tag--espera">Los que todavia esperan</span>
@@ -132,13 +128,251 @@
         </div>
       </div>
 
-      <!-- Cierre -->
       <div class="contexto__cierre">
         <p>Cada mes que pasa sin automatizar es un mes de ventaja que otro estudio acumula sobre el tuyo.</p>
       </div>
 
     </div>
   </section>
+
+  <!-- ===== TEMARIO ===== -->
+  <section class="temario">
+    <div class="container">
+
+      <div class="seccion-label">Programa del curso</div>
+      <h2 class="seccion-titulo">6 bloques. De cero a tu primer agente funcionando.</h2>
+
+      <div class="temario__grid">
+
+        <article class="modulo">
+          <div class="modulo__num">01</div>
+          <div class="modulo__body">
+            <h3 class="modulo__titulo">Que es un agente autonomo</h3>
+            <p class="modulo__insight">
+              La diferencia entre pedirle algo a la IA y hacer que la IA lo resuelva sola no es tecnica. Es conceptual. Y una vez que la entendas, no vas a poder ver tu trabajo de la misma manera.
+            </p>
+          </div>
+          <div class="modulo__geo" aria-hidden="true"></div>
+        </article>
+
+        <article class="modulo">
+          <div class="modulo__num">02</div>
+          <div class="modulo__body">
+            <h3 class="modulo__titulo">Arquitectura de agentes</h3>
+            <p class="modulo__insight">
+              Un flujo automatizado no es magia. Es diseno. En este bloque vas a entender como se estructura un sistema que trabaja mientras vos no estas.
+            </p>
+          </div>
+          <div class="modulo__geo" aria-hidden="true"></div>
+        </article>
+
+        <article class="modulo">
+          <div class="modulo__num">03</div>
+          <div class="modulo__body">
+            <h3 class="modulo__titulo">Agentes para documentacion</h3>
+            <p class="modulo__insight">
+              Cuando un agente redacta tu memoria descriptiva, vos estas en obra. Los dos trabajando al mismo tiempo.
+            </p>
+          </div>
+          <div class="modulo__geo" aria-hidden="true"></div>
+        </article>
+
+        <article class="modulo">
+          <div class="modulo__num">04</div>
+          <div class="modulo__body">
+            <h3 class="modulo__titulo">Agentes para presupuestos</h3>
+            <p class="modulo__insight">
+              El computo no deberia depender de quien tenga tiempo de actualizarlo. Un agente bien configurado lo hace solo, cada vez que los precios cambian.
+            </p>
+          </div>
+          <div class="modulo__geo" aria-hidden="true"></div>
+        </article>
+
+        <article class="modulo">
+          <div class="modulo__num">05</div>
+          <div class="modulo__body">
+            <h3 class="modulo__titulo">Agentes para gestion de proyectos</h3>
+            <p class="modulo__insight">
+              El reporte de avance que nadie quiere escribir puede generarse automaticamente. El seguimiento que siempre se atrasa puede suceder sin que nadie lo recuerde.
+            </p>
+          </div>
+          <div class="modulo__geo" aria-hidden="true"></div>
+        </article>
+
+        <article class="modulo">
+          <div class="modulo__num">06</div>
+          <div class="modulo__body">
+            <h3 class="modulo__titulo">Implementacion real</h3>
+            <p class="modulo__insight">
+              No necesitas saber programar. Necesitas saber que querés automatizar. De eso se trata este bloque: de salir con algo funcionando en tu estudio.
+            </p>
+          </div>
+          <div class="modulo__geo" aria-hidden="true"></div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSTRUCTOR ===== -->
+  <section class="instructor">
+    <div class="container">
+      <div class="instructor__inner">
+
+        <div class="instructor__avatar">LS</div>
+
+        <div class="instructor__bio">
+          <div class="seccion-label">Tu instructor</div>
+          <h2 class="instructor__nombre">Leonardo / SoyLeo AI</h2>
+          <p class="instructor__desc">
+            Arquitecto. ML Engineer. 10 anos en construccion, 4 anos aplicando IA a proyectos reales.
+            Implemento sistemas de automatizacion en estudios de arquitectura en Argentina.
+          </p>
+          <div class="instructor__cred">
+            <span class="cred-dot"></span>
+            @soy.leo_ai en Instagram &mdash; donde comparte casos reales de IA en arquitectura
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSCRIPCION ===== -->
+  <section class="inscripcion" id="inscripcion">
+    <div class="container">
+
+      <div class="inscripcion__inner">
+        <div class="inscripcion__header">
+          <div class="seccion-label">Inscripcion</div>
+          <h2 class="seccion-titulo" style="margin-bottom: 12px;">Reserva tu lugar</h2>
+          <p class="inscripcion__sub">17 de marzo 2026 &mdash; Curso online &mdash; $10.000 ARS</p>
+        </div>
+
+        <form class="form" id="formInscripcion" novalidate>
+
+          <div class="form__group">
+            <label class="form__label" for="nombre">Nombre completo</label>
+            <input class="form__input" type="text" id="nombre" name="nombre" placeholder="Tu nombre y apellido" required>
+            <span class="form__error" id="error-nombre"></span>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="email">Email</label>
+            <input class="form__input" type="email" id="email" name="email" placeholder="tu@email.com" required>
+            <span class="form__error" id="error-email"></span>
+          </div>
+
+          <div class="form__row">
+            <div class="form__group">
+              <label class="form__label" for="pais">Pais</label>
+              <select class="form__input form__select" id="pais" name="pais" required>
+                <option value="">Selecciona tu pais</option>
+                <option value="ar">Argentina</option>
+                <option value="cl">Chile</option>
+                <option value="uy">Uruguay</option>
+                <option value="py">Paraguay</option>
+                <option value="bo">Bolivia</option>
+                <option value="pe">Peru</option>
+                <option value="co">Colombia</option>
+                <option value="mx">Mexico</option>
+                <option value="es">Espana</option>
+                <option value="otro">Otro</option>
+              </select>
+              <span class="form__error" id="error-pais"></span>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="experiencia">Anos de experiencia</label>
+              <select class="form__input form__select" id="experiencia" name="experiencia" required>
+                <option value="">Selecciona una opcion</option>
+                <option value="estudiante">Soy estudiante</option>
+                <option value="1-3">1 a 3 anos</option>
+                <option value="4-10">4 a 10 anos</option>
+                <option value="+10">Mas de 10 anos</option>
+              </select>
+              <span class="form__error" id="error-experiencia"></span>
+            </div>
+          </div>
+
+          <div class="form__group">
+            <label class="form__label" for="software">Software principal de modelado</label>
+            <select class="form__input form__select" id="software" name="software" required>
+              <option value="">Selecciona tu software</option>
+              <option value="revit">Revit</option>
+              <option value="archicad">ArchiCAD</option>
+              <option value="sketchup">SketchUp</option>
+              <option value="autocad">AutoCAD</option>
+              <option value="vectorworks">Vectorworks</option>
+              <option value="ninguno">No uso modelado 3D</option>
+              <option value="otro">Otro</option>
+            </select>
+            <span class="form__error" id="error-software"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--lg form__submit" id="btnSubmit">
+            Confirmar inscripcion
+            <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+
+        </form>
+
+        <div class="form__confirmacion" id="formConfirmacion">
+          <div class="confirmacion__icono">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 13L9 17L19 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="confirmacion__msg" id="confirmacionMsg"></p>
+          <p class="confirmacion__sub">Revisa tu email para los proximos pasos.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-final">
+    <div class="cta-final__geometry" aria-hidden="true">
+      <div class="cta-geo cta-geo--grid"></div>
+      <div class="cta-geo cta-geo--arc cta-geo--arc-1"></div>
+      <div class="cta-geo cta-geo--arc cta-geo--arc-2"></div>
+      <div class="cta-geo cta-geo--dot cta-geo--dot-1"></div>
+      <div class="cta-geo cta-geo--dot cta-geo--dot-2"></div>
+    </div>
+    <div class="container">
+      <div class="cta-final__inner">
+        <h2 class="cta-final__headline">
+          Cada semana que pasa, otro estudio automatiza lo que vos seguís haciendo a mano
+        </h2>
+        <p class="cta-final__lugares">Quedan 20 lugares disponibles</p>
+        <a href="#inscripcion" class="btn btn--primary btn--lg">
+          Reservar mi lugar
+          <svg class="btn__arrow" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <span class="footer__logo">SoyLeo AI</span>
+        <div class="footer__links">
+          <a href="#" class="footer__link">@soy.leo_ai</a>
+          <span class="footer__sep"></span>
+          <a href="#" class="footer__link">LinkedIn</a>
+        </div>
+        <p class="footer__info">Curso 100% online &nbsp;|&nbsp; 17 de marzo 2026</p>
+        <p class="footer__copy">&copy; 2026 SoyLeo AI</p>
+      </div>
+    </div>
+  </footer>
 
   <script src="js/main.js"></script>
 </body>
